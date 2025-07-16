@@ -830,6 +830,7 @@ So that [benefit]
 
 
 3. Add a README.md file to your repo. Add your user stories and scenarios for all 6 features to it, and also include some basic information about the project. You can use the information in your project brief.
+  - README.md in root directory of repo
 
 
 If you need a refresher on README.md files, revisit Achievement 1.

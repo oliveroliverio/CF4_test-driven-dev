@@ -1,0 +1,6 @@
+node_modules
+.env
+images-md
+.cache
+.parcel-cache
+dist/

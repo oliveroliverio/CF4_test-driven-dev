@@ -741,6 +741,8 @@ This task will see you doing three different things in order to get your new Rea
 
 
 - You’ll start by converting the rest of your app’s key features into user stories, then use the “Given-When-Then” syntax to deliver a full list of scenarios based on the scenarios for features 2-6, as found in the project brief.
+
+
 - Next, you’ll use Vite to build your React project and publish it using GitHub and Vercel.
 - Finally, you’ll create an Amazon Web Services (AWS) account. You’ll need this account once you begin exploring serverless functions in the next Exercise. As it can take up to 24 hours to create an account, we ask that you start the process in this task. This will ensure your account is ready for the next task. Note that this account is not the same as the Amazon account you use for shopping!
 
@@ -768,19 +770,73 @@ Directions
 
 1. Convert features 2-6 (detailed in the Project Brief) into user stories using this format:
 
-
+```
 As a [role],
 I should be able to [action]
 So that [benefit]
-1. Convert the scenarios for each of the features in your Project Brief into Gherkin's (“Given-When-Then”) syntax.
-1. Add a README.md file to your repo. Add your user stories and scenarios for all 6 features to it, and also include some basic information about the project. You can use the information in your project brief.
+```
+
+  - *Filter Events by City.*
+    - As a **user**, I should be able to **filter events by city** so that **I can see a list of events in that city**
+  - *Show/Hide Event Details.*
+    - As a **user**, I should be able to **show/hide event details** so that **I can see more information about an event when I need**
+  - *Specify Number of Events.*
+    - As a **user**, I should be able to **specify the number of events** so that **I can limit how many events are displayed**
+  - *Use the App When Offline.*
+    - As a **user**, I should be able to **use the app when offline using cached data** so that **I can see event info if I lack internet access**
+  - *Add an App Shortcut to the Home Screen.*
+    - As a **user**, I should be able to **click on an icon that takes me to the home screen** so that **I can start over if I need to**
+  - *Display Charts Visualizing Event Details.*
+    - As a **user**, I should be able to **view charts visualizing event details** so that **I can see event information in a visual format**
+
+---
+2. Convert the scenarios for each of the features in your Project Brief into Gherkin's (“Given-When-Then”) syntax.
+- *Filter Events by City.*
+  - **Scenario:** User can filter events by city to show only relevant local events
+    - **Given** the list of events has been loaded
+    - **When** user selects a city from the filter dropdown or types a city name
+    - **Then** a list of cities will be displayed in the filter dropdown
+    - **When** user clicks on a city in the filter dropdown
+    - **Then** the list of events will be filtered to show only events in the selected city
+- *Show/Hide Event Details.*
+  - **Scenario:** User can expand an event to see its details
+    - **Given** the list of events has been loaded
+    - **When** user clicks on “Show details” button for an event
+    - **Then** the event element will be expanded to show the event details
+- *Specify Number of Events.*
+  - **Scenario:** User can specify the number of events to display
+    - **Given** the list of events has been loaded, and the user has selected a city
+    - **When** user selects a number from the filter dropdown
+    - **Then** the list of events will be filtered to show only the specified number of events
+- *Use the App When Offline.*
+  - **Scenario:** User can use the app when offline using cached data
+    - **Given** the list of events has been loaded, and the user has selected a city
+    - **When** user does nothing (this is automatic, no user input needed)
+    - **Then** the list of filtered events will be displayed using cached data
+
+- *Add an App Shortcut to the Home Screen.*
+  - **Scenario:** The user can click on a home button to go back to home page
+    - **Given** the user is on any page of the app
+    - **When** user clicks on home button
+    - **Then** the user will be taken back to the home page
+- *Display Charts Visualizing Event Details.*
+  - **Scenario:**- User selects multiple events and clicks on "compare" to show visual charts (comparison table) comparing events (size, location, length, date, etc)
+    - **Given** that the user has selected multiple events components
+    - **When** user clicks on "compare" button
+    - **Then** the app should display a comparison table showing the selected events' details
+
+---
+
+
+
+3. Add a README.md file to your repo. Add your user stories and scenarios for all 6 features to it, and also include some basic information about the project. You can use the information in your project brief.
 
 
 If you need a refresher on README.md files, revisit Achievement 1.
-1. Create and deploy your React app to Vercel following the steps in the Exercise. Check that everything worked correctly by navigating to the URL for your site once it’s been deployed.
-1. Create a zip file of your project repository on your computer.
-1. Submit your zip file, as well as the links to your deployed meet site and GitHub repository here. Feel free to share additional thoughts or ask questions on your submission page.
-1. Follow the steps provided in this tutorial for creating an AWS account to create your own AWS account. You’ll be using it in the next Exercise.
+4. Create and deploy your React app to Vercel following the steps in the Exercise. Check that everything worked correctly by navigating to the URL for your site once it’s been deployed.
+5. Create a zip file of your project repository on your computer.
+6. Submit your zip file, as well as the links to your deployed meet site and GitHub repository here. Feel free to share additional thoughts or ask questions on your submission page.
+7. Follow the steps provided in this tutorial for creating an AWS account to create your own AWS account. You’ll be using it in the next Exercise.
 
 Rubric
 

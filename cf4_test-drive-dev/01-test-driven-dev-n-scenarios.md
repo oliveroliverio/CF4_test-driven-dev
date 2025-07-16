@@ -273,7 +273,7 @@ Of course, reading a list of steps is much easier than actually understanding it
 
 ##### 1. (Re-)Write a Test
 
-![An arrow with the words “Step 1” pointing to a circle with the words “(Re)Write a test”](https://images.careerfoundry.com/public/courses/fullstack-immersion/A4/4.1/step-one-rewrite-test.jpg)
+![An arrow with the words “Step 1” pointing to a circle with the words “(Re)Write a test”](images-md/misc/step-one-rewrite-test_1752693161303.jpg)
 
 
 ###### Figure 2.
@@ -285,7 +285,7 @@ Suppose one of the requirements of your Meet app is a feature that enables users
 
 ##### 2. Test Fails
 
-![An arrow with the words “Step 1” pointing to a circle with the words “(Re)Write a test” and an arrow with the words “Step 2” pointing to a red diamond with the words “Test fails.” Another smaller arrow connects Steps 1 and 2 in a cyclical motion.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A4/4.1/step-two-test-fails.jpg)
+![An arrow with the words “Step 1” pointing to a circle with the words “(Re)Write a test” and an arrow with the words “Step 2” pointing to a red diamond with the words “Test fails.” Another smaller arrow connects Steps 1 and 2 in a cyclical motion.](images-md/misc/step-two-test-fails_1752693161671.jpg)
 
 
 ###### Figure 3.
@@ -297,7 +297,7 @@ As you haven’t written any code for expanding information about events upon bu
 
 ##### 3. Implement a Fix
 
-![Three arrows pointing to the first three steps of test-driven development: “(Re)Write a test,” “Test fails,” and “Implement.”](https://images.careerfoundry.com/public/courses/fullstack-immersion/A4/4.1/step-three-implement.jpg)
+![Three arrows pointing to the first three steps of test-driven development: “(Re)Write a test,” “Test fails,” and “Implement.”](images-md/misc/step-three-implement_1752693161937.jpg)
 
 
 ###### Figure 4.
@@ -309,7 +309,7 @@ You set to work writing however much code is necessary to ensure that whenever a
 
 ##### 4. Test Passes
 
-![Four arrows pointing to the first four steps of test-driven development— “(Re)Write a test,” “Test fails,” “Implement,” and  “Test passes.”](https://images.careerfoundry.com/public/courses/fullstack-immersion/A4/4.1/step-four-test-passes.jpg)
+![Four arrows pointing to the first four steps of test-driven development— “(Re)Write a test,” “Test fails,” “Implement,” and  “Test passes.”](images-md/misc/step-four-test-passes_1752693162415.jpg)
 
 
 ###### Figure 5.
@@ -321,7 +321,7 @@ You run your tests again, and they pass! This means that a user can now successf
 
 ##### 5. Clean Up Code
 
-![Five arrows pointing at the first five steps of test-driven development, from (Re-)write test through to “Clean up code”](https://images.careerfoundry.com/public/courses/fullstack-immersion/A4/4.1/step-five-code-cleanup.jpg)
+![Five arrows pointing at the first five steps of test-driven development, from (Re-)write test through to “Clean up code”](images-md/misc/step-five-code-cleanup_1752693162637.jpg)
 
 
 ###### Figure 6.
@@ -495,19 +495,19 @@ This command will set up a project using the Vite tool. If this is your first ti
 
 Once the packages for Vite are downloaded, you’ll be prompted to type the name of your project. Let’s call it “meet”:
 
-![Naming your meet app.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure7.png)
+![Naming your meet app.](images-md/misc/figure7_1752693162903.png)
 
 
 ###### Figure 7.
 
 Then, you’ll need to select the Framework to use. From the available options, select React, followed by the variant Javascript + SWC.
 
-![Selecting React.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure8.png)
+![Selecting React.](images-md/misc/figure8_1752693163249.png)
 
 
 ###### Figure 8.
 
-![Selecting JavaScript plus SWC.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure9.png)
+![Selecting JavaScript plus SWC.](images-md/misc/figure9_1752693163375.png)
 
 
 ###### Figure 9.
@@ -555,7 +555,7 @@ npm run dev
 
 After running these commands, you should be able to navigate to your app in the browser under the URL`http://localhost:5173/`:
 
-![Navigating to your app.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure10.png)
+![Navigating to your app.](images-md/misc/figure10_1752693163596.png)
 
 
 ###### Figure 10.
@@ -569,7 +569,7 @@ You used GitHub Pages to host your portfolio site in the Intro to Frontend Devel
 
 Head over to [GitHub](https://github.com/new) and create a new repository:
 
-![Create a new repository window on GitHub. The words “APP_NAME” appear under the “Repository name” field, and the “Public” option has been selected for the type of repository.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A4/4.1/github-new-repository.png)
+![Create a new repository window on GitHub. The words “APP_NAME” appear under the “Repository name” field, and the “Public” option has been selected for the type of repository.](images-md/misc/github-new-repository_1752693163710.png)
 
 
 ###### Figure 11.
@@ -578,7 +578,7 @@ Enter the name of your app under “Repository name” (for the sake of future e
 
 You’ll be taken to the setup page shown in Figure 9, which will guide you through setting up your project.
 
-![GitHub’s setup page, showing “Quick setup” for those familiar with the process.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A4/4.1/github-setup-page.png)
+![GitHub’s setup page, showing “Quick setup” for those familiar with the process.](images-md/ui/github-setup-page_1752693163966.png)
 
 
 ###### Figure 12.
@@ -628,55 +628,55 @@ To push your committed changes, use the command:
 Vercel is a hosting and deployment platform optimized for frontend applications and static websites with focus on modern frameworks such as React, Next.js, Vue.js, and Angular among others. To deploy a project on Vercel and link it with a project on GitHub, you’ll need to follow these steps:
 
 Create an account on Vercel: If you don’t have an account on Vercel yet, go to the official [Vercel website](https://vercel.com/) and sign up. Choose the free “Hobby” version:
-![Creating a Vercel account.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure13.png)
+![Creating a Vercel account.](images-md/misc/figure13_1752693164248.png)
 
 
 ###### Figure 13.
 
 Now, use your GitHub account to facilitate the integration:
-![Integrating with GitHub.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure14.png)
+![Integrating with GitHub.](images-md/misc/figure14_1752693164408.png)
 
 
 ###### Figure 14.
 
 Log in to Vercel: After creating an account, log in to Vercel using the GitHub option. Generally, after registration, the login is automatic. You should see the following welcome screen:
-![Logging in to Vercel.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure15.png)
+![Logging in to Vercel.](images-md/misc/figure15_1752693164531.png)
 
 
 ###### Figure 15.
 
 Import project to Vercel: Click the “Import Project” option to link your repository and deploy a new Vercel project:
-![Importing your project.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure16.png)
+![Importing your project.](images-md/misc/figure16_1752693164825.png)
 
 
 ###### Figure 16.
 
 Install the Vercel GitHub extension: You’ll now see a section on the screen where you can select a repository from GitHub and load it into your newly created Vercel project. The first time you do this step, it will ask you to install a GitHub extension for Vercel. Install this extension:
-![Installing the GitHub extension.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure17.png)
+![Installing the GitHub extension.](images-md/misc/figure17_1752693165047.png)
 
 
 ###### Figure 17.
 
 Select the GitHub account where your repository is located:
-![Selecting the GitHub account.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure18.png)
+![Selecting the GitHub account.](images-md/misc/figure18_1752693165224.png)
 
 
 ###### Figure 18.
 
 You’ll need to grant access to your GitHub so that Vercel can access your repositories, then finalize the installation:
-![Granting access to GitHub.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure19.png)
+![Granting access to GitHub.](images-md/misc/figure19_1752693165421.png)
 
 
 ###### Figure 19.
 
 Import your repository: After installing the GitHub extension, you’ll be redirected to the previous section, where you can select the repository to link with the project. You’ll see a complete list of your repositories. Simply select the one you need and import it:
-![Importing your repository.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure20.png)
+![Importing your repository.](images-md/misc/figure20_1752693165701.png)
 
 
 ###### Figure 20.
 
 Project configuration: Vercel will automatically detect that your project is a React application and apply the default configuration. Generally, you don’t need to change anything, but you can review and adjust the configuration if necessary. Once finished with the configuration, click the Deploy button:
-![Using automatic configuration.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure21.png)
+![Using automatic configuration.](images-md/misc/figure21_1752693165902.png)
 
 
 ###### Figure 21.
@@ -689,19 +689,19 @@ Deploy the application: Once you’ve connected your repository, Vercel will sta
 - Deployment: The application will be deployed at a URL provided by Vercel.
 
 After the application build is complete, you’ll be redirected to a new screen that indicates how your deployment went. If there are no errors, you’ll see a congratulations screen, where you can click Continue to Dashboard:
-![Continue to Dashboard.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure22.png)
+![Continue to Dashboard.](images-md/misc/figure22_1752693166069.png)
 
 
 ###### Figure 22.
 
 Application URL and testing: Once you click on the Dashboard of your newly deployed application, you’ll be able to see more-detailed information about the number of deployments you’ve made, the commits and branches of your linked repository, as well as the current status of the application. To view the application live, click the Visit button:
-![Clicking the Visit button.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure23.png)
+![Clicking the Visit button.](images-md/misc/figure23_1752693166273.png)
 
 
 ###### Figure 23.
 
 The generated link is the public URL of your application in production. You now have your first deployed React application in Vercel! Now, it’s time to test and verify that everything works correctly.
-![Your live app on Vercel.](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A4/4.1/figure24.png)
+![Your live app on Vercel.](images-md/misc/figure24_1752693166458.png)
 
 
 ###### Figure 24.
@@ -786,21 +786,21 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images-md/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1752693166681.svg)
 
 
 - App created with Create React App but not on GitHub Pages or contains errors; AND
 - User stories and scenarios for project features are unclear and inaccurate; AND
 - “Given-When-Then” syntax hasn’t been employed
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images-md/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1752693167171.svg)
 
 
 - App created with Create React App and on GitHub Pages; AND
 - Project features converted into user stories, though some may be inaccurate; AND
 - User stories converted into scenarios using the “Given-When-Then” syntax, though some may lack clarity and/or accuracy
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images-md/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1752693167534.svg)
 
 
 - App created with Create React App, is on GitHub Pages, and contains no errors; AND

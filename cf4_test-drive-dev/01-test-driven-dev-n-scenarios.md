@@ -792,38 +792,90 @@ So that [benefit]
 ---
 2. Convert the scenarios for each of the features in your Project Brief into Gherkin's (“Given-When-Then”) syntax.
 - *Filter Events by City.*
-  - **Scenario:** User can filter events by city to show only relevant local events
+  - **Scenario 1:** User can filter events by city to show only relevant local events
     - **Given** the list of events has been loaded
     - **When** user selects a city from the filter dropdown or types a city name
     - **Then** a list of cities will be displayed in the filter dropdown
     - **When** user clicks on a city in the filter dropdown
     - **Then** the list of events will be filtered to show only events in the selected city
+  - **Scenario 2:** User sees all events when no city is selected
+    - **Given** the list of events is displayed
+    - **When** no city is selected in the filter dropdown
+    - **Then** all events from all cities are shown
+  - **Scenario 3:** User clears city filter to reset event list
+    - **Given** a city filter is currently applied
+    - **When** user clears the selected city filter
+    - **Then** the list of events will reset to show all cities' events
+
 - *Show/Hide Event Details.*
-  - **Scenario:** User can expand an event to see its details
+  - **Scenario 1:** Event element is collapsed by default
+    - **Given** the user hasn’t selected any event
+    - **When** the user views the list of events
+    - **Then** the event elements are collapsed
+  - **Scenario 2:** User can expand an event to see its details
     - **Given** the list of events has been loaded
-    - **When** user clicks on “Show details” button for an event
-    - **Then** the event element will be expanded to show the event details
+    - **When** the user clicks on “Show details” button for an event
+    - **Then** the event element is expanded to show the event details
+  - **Scenario 3:** User can collapse an event to hide its details
+    - **Given** the event element has been expanded
+    - **When** the user clicks on “Hide details” button for that event
+    - **Then** the event element is collapsed to hide the event details
+
 - *Specify Number of Events.*
-  - **Scenario:** User can specify the number of events to display
+  - **Scenario 1:** User can specify the number of events to display
     - **Given** the list of events has been loaded, and the user has selected a city
     - **When** user selects a number from the filter dropdown
     - **Then** the list of events will be filtered to show only the specified number of events
+  - **Scenario 2:** User resets number of events to show all
+    - **Given** the number of events has been previously limited
+    - **When** the user clears the number filter
+    - **Then** all filtered events will be displayed without limitation
+  - **Scenario 3:** User enters a custom number of events
+    - **Given** the number dropdown includes a custom input field
+    - **When** the user enters a valid custom number
+    - **Then** the event list updates to show the specified number of events
+
 - *Use the App When Offline.*
-  - **Scenario:** User can use the app when offline using cached data
+  - **Scenario 1:** User can use the app when offline using cached data
     - **Given** the list of events has been loaded, and the user has selected a city
     - **When** user does nothing (this is automatic, no user input needed)
     - **Then** the list of filtered events will be displayed using cached data
+  - **Scenario 2:** User is notified they are offline
+    - **Given** the user has lost internet connection
+    - **When** the app attempts to fetch new data
+    - **Then** a message is displayed notifying the user they are offline and viewing cached data
+  - **Scenario 3:** User sees last cached version of city-filtered results
+    - **Given** the user previously filtered by city while online
+    - **When** the user goes offline and returns to the app
+    - **Then** the event list will default to the last city-filtered results stored in cache
 
 - *Add an App Shortcut to the Home Screen.*
-  - **Scenario:** The user can click on a home button to go back to home page
+  - **Scenario 1:** The user can click on a home button to go back to home page
     - **Given** the user is on any page of the app
     - **When** user clicks on home button
     - **Then** the user will be taken back to the home page
+  - **Scenario 2:** App icon shortcut is available for installation
+    - **Given** the app meets PWA install requirements
+    - **When** the user sees the install prompt
+    - **Then** the user can add the app to their home screen
+  - **Scenario 3:** User launches the app from home screen shortcut
+    - **Given** the user has already installed the app
+    - **When** the user taps the app icon from their home screen
+    - **Then** the app launches in full-screen mode or in standalone mode
+
 - *Display Charts Visualizing Event Details.*
-  - **Scenario:**- User selects multiple events and clicks on "compare" to show visual charts (comparison table) comparing events (size, location, length, date, etc)
-    - **Given** that the user has selected multiple events components
+  - **Scenario 1:** User selects multiple events and clicks on "compare" to show visual charts (comparison table)
+    - **Given** that the user has selected multiple event components
     - **When** user clicks on "compare" button
     - **Then** the app should display a comparison table showing the selected events' details
+  - **Scenario 2:** User sees message if not enough events are selected
+    - **Given** the user has selected fewer than two events
+    - **When** user clicks on "compare" button
+    - **Then** the app displays a message prompting the user to select at least two events
+  - **Scenario 3:** User updates selection and comparison chart refreshes
+    - **Given** a comparison chart is currently displayed
+    - **When** the user selects or deselects events
+    - **Then** the comparison chart updates in real-time to reflect the new selection
 
 ---
 
